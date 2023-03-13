@@ -12,6 +12,11 @@ The program runs in an infinite while loop that continuously checks the state of
 
 The specific keyboard commands sent for each button press are specified in the if statements within the while loop. The commands include pressing combinations of modifier keys (Keycode.CONTROL, Keycode.ALT) and specific keys (Keycode.B, Keycode.F2, etc.), as well as sending multiple commands in sequence with a short delay in between.
 
+## Hardware:
+
+This project is based around a Raspberry Pi Pico microcontroller running CircuitPython.
+Once the controller is flashed with CircuitPython, the necessary files can be found in the \Pico_Code folder. 
+
 ## Application:
 
 Reference \lib\adafruit_hid\keycode.py for keycode call mappings. 
