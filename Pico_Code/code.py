@@ -6,9 +6,9 @@ import board
 import digitalio
 # These are the corresponding GPIOs on the Pi Pico
 # that you soldered
-btn1_pin = board.GP4
+btn1_pin = board.GP2
 btn2_pin = board.GP3
-btn3_pin = board.GP2
+btn3_pin = board.GP4
 btn4_pin = board.GP6
 btn5_pin = board.GP7
 btn6_pin = board.GP8
@@ -51,44 +51,39 @@ keyboard = Keyboard(usb_hid.devices)
 # for additional help
 while True:
     if btn1.value:
-        keyboard.send(Keycode.CONTROL, Keycode.ALT, Keycode.B) #1       
+        keyboard.send(Keycode.7) #1    
+        print('1')
         time.sleep(0.1) 
     if btn2.value:
-        keyboard.send(Keycode.CONTROL, Keycode.ALT, Keycode.J) #4
+        keyboard.send(Keycode.8) #4
         print('4')
         time.sleep(0.1)
     if btn3.value:  
-        keyboard.send(Keycode.F2) #7 
+        keyboard.send(Keycode.9) #7 
         print('7')
         time.sleep(0.1)
     if btn4.value:
-        keyboard.send(Keycode.CONTROL, Keycode.ALT, Keycode.N) #2
+        keyboard.send(Keycode.4) #2
         print('2')
         time.sleep(0.1)
-        keyboard.send(Keycode.CONTROL, Keycode.V) 
-        time.sleep(0.1)
-        keyboard.send(Keycode.TAB)
     if btn5.value:
-        keyboard.send(Keycode.CONTROL, Keycode.ALT, Keycode.K) #5
+        keyboard.send(Keycode.5) #5
         print('5')
         time.sleep(0.1)
     if btn6.value:
-        keyboard.send(Keycode.CONTROL, Keycode.ALT, Keycode.O) #8
-        print(8)
+        keyboard.send(Keycode.6) #8
+        print('8')
         time.sleep(0.1)
     if btn7.value:
-        keyboard.send(Keycode.CONTROL, Keycode.ALT, Keycode.M) #3
+        keyboard.send(Keycode.1) #3
         print('3')
         time.sleep(0.1)
-        keyboard.send(Keycode.CONTROL, Keycode.V)
-        time.sleep(0.1)
-        keyboard.send(Keycode.TAB)
     if btn8.value:
-        keyboard.send(Keycode.CONTROL, Keycode.ALT, Keycode.L) #6
+        keyboard.send(Keycode.2) #6
         print('6')
         time.sleep(0.1)
     if btn9.value:
-        keyboard.send(Keycode.CONTROL, Keycode.ALT, Keycode.P) #9
+        keyboard.send(Keycode.3) #9
         print('9')
         time.sleep(0.1)
     time.sleep(0.05)
