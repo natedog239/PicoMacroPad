@@ -51,39 +51,39 @@ keyboard = Keyboard(usb_hid.devices)
 # for additional help
 while True:
     if btn1.value:
-        keyboard.send(Keycode.7) #1    
+        keyboard.send(Keycode.ONE) #1    
         print('1')
         time.sleep(0.1) 
     if btn2.value:
-        keyboard.send(Keycode.8) #4
+        keyboard.send(Keycode.TWO) #4
         print('4')
         time.sleep(0.1)
     if btn3.value:  
-        keyboard.send(Keycode.9) #7 
+        keyboard.send(Keycode.THREE) #7 
         print('7')
         time.sleep(0.1)
     if btn4.value:
-        keyboard.send(Keycode.4) #2
+        keyboard.send(Keycode.FOUR) #2
         print('2')
         time.sleep(0.1)
     if btn5.value:
-        keyboard.send(Keycode.5) #5
+        keyboard.send(Keycode.FIVE) #5
         print('5')
         time.sleep(0.1)
     if btn6.value:
-        keyboard.send(Keycode.6) #8
+        keyboard.send(Keycode.SIX) #8
         print('8')
         time.sleep(0.1)
     if btn7.value:
-        keyboard.send(Keycode.1) #3
+        keyboard.send(Keycode.SEVEN) #3
         print('3')
         time.sleep(0.1)
     if btn8.value:
-        keyboard.send(Keycode.2) #6
+        keyboard.send(Keycode.EIGHT) #6
         print('6')
         time.sleep(0.1)
     if btn9.value:
-        keyboard.send(Keycode.3) #9
+        keyboard.send(Keycode.NINE) #9
         print('9')
         time.sleep(0.1)
     time.sleep(0.05)
