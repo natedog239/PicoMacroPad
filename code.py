@@ -4,8 +4,7 @@ from adafruit_hid.keycode import Keycode
 from adafruit_hid.keyboard import Keyboard
 import board
 import digitalio
-# These are the corresponding GPIOs on the Pi Pico
-# that you soldered
+# These are the corresponding GPIOs on the Pi Pico based on the soldering 
 btn1_pin = board.GP4
 btn2_pin = board.GP3
 btn3_pin = board.GP2
